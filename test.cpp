@@ -8,19 +8,19 @@ using namespace std;
 void Loading2()
 {
 	char a = 177, b=219;
-	std::cout<<"\n\t\t\t\t\t\tLoading...\n\n";
-	std::cout<<"\t\t\t\t\t";
+	cout<<"\n\t\t\t\t\t\tLoading...\n\n";
+	cout<<"\t\t\t\t\t";
 	for(int i=0;i<26;i++)
-	std::cout<<a;
+	cout<<a;
 	
-	std::cout<<"\r";
-	std::cout<<"\t\t\t\t\t";
+	cout<<"\r";
+	cout<<"\t\t\t\t\t";
 	for(int i=0;i<26;i++)
 	{
 		std::cout<<b;
 		Sleep(100);
 	}
-	std::cout<<"\nDa load xong!!";
+	cout<<"\nDa load xong!!";
 	Sleep(500);
 	cout<<"NGUOI YEU BAN NE!"<<endl<<endl<<endl;Sleep(800);
 	system("color F");
