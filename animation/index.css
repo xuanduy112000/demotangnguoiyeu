@@ -1,0 +1,10 @@
+#meo{
+    display: block;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto ;
+    background-color: aquamarine;
+}

@@ -5,6 +5,26 @@
 #include<string>
 using namespace std;
 
+void Loading2()
+{
+	char a = 177, b=219;
+	std::cout<<"\n\t\t\t\t\t\tLoading...\n\n";
+	std::cout<<"\t\t\t\t\t";
+	for(int i=0;i<26;i++)
+	std::cout<<a;
+	
+	std::cout<<"\r";
+	std::cout<<"\t\t\t\t\t";
+	for(int i=0;i<26;i++)
+	{
+		std::cout<<b;
+		Sleep(100);
+	}
+	std::cout<<"\nDa load xong!!";
+	Sleep(500);
+	cout<<"NGUOI YEU BAN NE!"<<endl<<endl<<endl;Sleep(800);
+	system("color F");
+}
 
 void XuLy(){
 	fstream file;
@@ -42,8 +62,7 @@ void Loading()
 	cout<<"LOADING.....80%"<<endl;Sleep(200);
 	cout<<"LOADING.....90%"<<endl;Sleep(200);
 	cout<<"LOADING.....100%"<<endl<<endl;Sleep(200);
-	cout<<"NGUOI YEU BAN NE!"<<endl<<endl<<endl;Sleep(800);
-	system("color F");
+	
 }
 
 int main()
@@ -60,6 +79,7 @@ int main()
 	{
 		cout<<endl<<"--------------------------------Chuc mung ban da dang nhap thanh cong!-----------------------------------"<<endl;
 		Loading();
+		Loading2();
 		XuLy();break;
 	}
 	else 
@@ -71,5 +91,4 @@ int main()
 	}
 	while(gioihan<=3);
 	getch();
-	
 }
